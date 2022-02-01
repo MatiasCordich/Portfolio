@@ -1,0 +1,35 @@
+/* ============== FUENTE ==============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+
+/* ============== VARIABLES ==============*/
+
+:root {
+
+    /* ==== Tipografía ==== */
+
+    --fuentePrincipal: 'Raleway', sans-serif;
+
+    /* ==== Colores ==== */
+
+    --white: #F5EDED;
+    --red: #D72323;
+    --brown: #3E3636;
+    --black: #000000;
+
+    /* ==== Colores - iconos ==== */
+
+    --html: #e34f26;
+    --css: #0099e5;
+    --javascript: #F0DB4F;
+    --react: #00d8ff;
+    --express: #4d4f53;
+    --mongo: #3fa037;
+    --node: #6cc24a;
+    --npm: #cb3837;
+    --visual: #0078d7;
+    --firebase: #fbaf3f;
+    --git: #f1502f;
+    --bootstrap: #563d7c;
+    --bash: #1d1d1d;
+}

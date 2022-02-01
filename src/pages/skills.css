@@ -1,0 +1,111 @@
+@import '../variables/variables.css';
+
+.skills {
+    margin: 0 auto;
+    width: 95%;
+    margin-top: 5rem;
+}
+
+.skills__title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--brown);
+}
+
+.skills__title span {
+    font-weight: 800;
+    color: var(--red);
+}
+
+.skills__icons-frontend,
+.skills__icons-backend,
+.skills__icons-tools{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.skills__icons-frontend h2,
+.skills__icons-backend h2,
+.skills__icons-tools h2 {
+    color: var(--brown);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+}
+
+.icon{
+    font-size: 4.5rem;
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: 1rem;
+    color: var(--red);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icon:hover{
+    transition: all .6s;
+    transform: scale(1.2);
+}
+
+.devicon-html5-plain:hover{
+    color: var(--html);
+}
+.devicon-css3-plain:hover{
+    color:var(--css)
+}
+.devicon-javascript-plain:hover{
+    color: var(--javascript);
+}
+.devicon-react-original:hover{
+    color: var(--react);
+}
+.devicon-express-original:hover{
+    color: var(--express);
+}
+.devicon-nodejs-plain:hover{
+    color: var(--node);
+}
+
+.devicon-mongodb-plain:hover{
+    color: var(--mongo);
+}
+
+.devicon-git-plain:hover{
+    color:var(--git);
+}
+.devicon-firebase-plain:hover{
+    color: var(--firebase);
+}
+.devicon-npm-original-wordmark:hover{
+    color: var(--npm);
+}
+.devicon-vscode-plain:hover{
+    color: var(--visual);
+}
+
+.devicon-bootstrap-plain:hover{
+    color: var(--bootstrap);
+}
+
+.devicon-bash-plain:hover{
+    color:var(--bash)
+}
+
+@media (min-width: 990px) {
+    .icons {
+        justify-content: flex-start;
+    }
+
+    .icon{
+        font-size: 6rem;
+    }
+}

@@ -1,0 +1,60 @@
+@import '../variables/variables.css';
+
+.contact{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.contact h2 {
+    color: var(--brown);
+    font-size: 3.5rem;
+}
+
+.contact span {
+    color: var(--red);
+}
+
+.contact > * {
+    padding: 1.5rem;
+}
+
+.contact__container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    color: var(--white);
+    border-radius: 0.6rem;
+    background: var(--red);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contact__container p {
+    line-height: 4.5rem;
+}
+
+.contact__btn{
+    border: 2px solid var(--white);
+    border-radius: .6rem;
+    background: #fafafa2a;
+    color: var(--white);
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.contact__btn:hover{
+    color: var(--red);
+    background: var(--white);
+    transition: all .6s;
+}
+
+@media (min-width: 990px) {
+    .contact__container{
+        width: 80%;
+    }
+}

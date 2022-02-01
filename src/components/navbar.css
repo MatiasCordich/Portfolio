@@ -1,0 +1,107 @@
+/* ======== VARIABLES ========  */
+
+@import '../variables/variables';
+
+/* ======== nAVBAR ========  */
+
+.navbar{
+    width: 90%;
+    margin: 2rem
+}
+
+/* ======== NAVBAR - icons ========  */
+
+.lni-menu,
+.lni-close{
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lni-menu{
+    color: var(--red);
+    font-size: 2.5rem;
+}
+
+.lni-close{
+    margin: 1.5rem;
+    color: var(--white);
+}
+
+.lni-close-off{
+    display: none;
+}
+
+/* ======== NAVBAR - display ========  */
+
+.display-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--red);
+    transition: all .6s;
+}
+
+.display-navbar-off{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .6s;
+    width: 0;
+    height: 0;
+}
+
+/* ======== NAVBAR - links ========  */
+
+.navbar-links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:4rem;
+}
+
+.navbar-links-off{
+    display: none;
+}
+
+.active {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.inactive {
+    color:var(--white);
+    font-weight: 300 ;
+}
+
+@media (min-width: 990px) {
+
+    header{
+        margin: 1rem;
+    }
+
+    .lni-menu,
+    .lni-close,
+    .navbar {
+        display: none;
+    }
+
+    .display-navbar {
+        position:static;
+        width: 90%;
+        height: 8rem;
+        background: var(--red);
+        border-radius: 2rem 0 2rem 0;
+        margin: 0 auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .display-navbar ul {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,131 @@
+@import '../variables/variables.css';
+
+.home{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 15rem;
+}
+
+.home__image{
+    width: 100%;
+    height: 30rem;
+}
+.home__text{
+    line-height: 4.5rem;
+}
+
+.home__content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+.home__text h1,
+.home__text h2,
+.home__text p {
+    text-align: center;
+}
+
+.home__text h1{
+    color: var(--red);
+    font-weight: 800;
+    font-size: 4.5rem;
+}
+
+.home__text h2 {
+    color: var(--brown);
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+.home__text p {
+    width: 95%;
+}
+
+.home__text span {
+    color:var(--red);
+    font-weight: 700;
+}
+
+.home__btn-social,
+.home__btn-contact{
+    display: flex;
+    gap: 2rem;
+}
+
+.home__btn-social a {
+    color: var(--red);
+    font-size: 2.8rem;
+}
+
+.home__btn-social a:hover{
+    transform: scale(1.5);
+    transition: all .6s;
+}
+
+.home__btn-contact a{
+    background: #d723231a ;
+    border: 2px solid var(--red);
+    border-radius: 1rem;
+    color: var(--red);
+    padding: 1rem;
+}
+
+.home__btn-contact a:hover{
+    background: var(--red);
+    color: var(--white);
+    transition: all .6s;
+}
+
+.circle{
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+    border-radius: 100%;
+    background: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle__image{
+    display: inline-block;
+    width: 30rem;
+    border-radius: 100%;
+    
+}
+
+@media (min-width: 990px) {
+    .home{
+        flex-direction: row-reverse;
+        width: 90%;
+        margin: 0 auto;
+        height: 60rem;
+    }
+
+
+    .home__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem
+    }
+
+    .home__text h1 {
+        font-size: 7rem;
+    }
+
+    .circle,
+    .circle__image{
+        width: 35rem;
+        height: 35rem;
+    }
+
+
+}
