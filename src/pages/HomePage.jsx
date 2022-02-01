@@ -19,11 +19,11 @@ const HomePage = () => {
             </div>
             <div className='home__btn-social'>
 
-              <a href="https://github.com/MatiasCordich" target="_blank">
+              <a href="https://github.com/MatiasCordich" target="_blank" rel='noreferrer'>
                 <i className="fab fa-github"></i>
               </a>
 
-              <a href="https://www.linkedin.com/in/matiassiocordich/" target="_blank">
+              <a href="https://www.linkedin.com/in/matiassiocordich/" target="_blank" rel='noreferrer'>
                 <i className="fab fa-linkedin-in"></i>
               </a>
 
@@ -33,7 +33,7 @@ const HomePage = () => {
               <a href="mailto:m.cordich20@gmail.com">
                  <i className="far fa-envelope"></i> Contacto
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/matiassiocordich/" target="_blank" rel='noreferrer'>
                 <i className="far fa-file"></i> Mi CV
               </a>
             </div>
