@@ -104,7 +104,7 @@
 @media (min-width: 990px) {
     .home{
         flex-direction: row-reverse;
-        width: 90%;
+        width: 70%;
         margin: 0 auto;
         height: 60rem;
     }

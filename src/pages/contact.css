@@ -7,11 +7,13 @@
 }
 
 .contact h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
     color: var(--brown);
-    font-size: 3.5rem;
 }
 
 .contact span {
+    font-weight: 800;
     color: var(--red);
 }
 

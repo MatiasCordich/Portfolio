@@ -2,7 +2,7 @@ import './proyects.css'
 
 const Proyects = () => {
   return <div>
-      <h1>Proyects</h1>
+      <h1 className='proyects-title'><span>3.</span> Proyectos</h1>
       <div className='cards'>
         <div className='card'>
           <div className='face face1'>
