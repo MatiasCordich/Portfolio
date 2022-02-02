@@ -1,0 +1,74 @@
+@import '../variables/variables.css';
+
+.card {
+    max-width: 30rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.face {
+    max-width:30rem;
+    width: 100%;
+    height: 20rem;
+    transition: 0.5s;
+}
+
+.card .face.face1 {
+    position: relative;
+    background: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(10rem);
+}
+
+.card:hover .face.face1{
+    background: salmon;
+    transform: translateY(0);
+}
+
+.card .face.face1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.face.face1 .content h3 {
+    margin: 1rem 0 0;
+    padding: 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.card .face.face2 {
+    position: relative;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-10rem);
+}
+
+.card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+@media (min-width: 990px) {
+    .cards{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
