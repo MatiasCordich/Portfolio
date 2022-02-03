@@ -3,7 +3,7 @@ import './proyects.css'
 const Proyects = () => {
   return <div>
       <h1 className='proyects-title'><span>3.</span> Proyectos</h1>
-      <div className='cards'>
+      <div className='cards' data-aos="fade-down" data-aos-duration="1500">
         <div className='card'>
           <div className='face face1'>
             <div className='content'>

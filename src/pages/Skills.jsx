@@ -5,7 +5,7 @@ const Skills = () => {
       <h1 className='skills__title'><span>2.</span> Skills</h1>
 
       <div className='skills__icons'>
-        <div className='skills__icons-frontend'>
+        <div className='skills__icons-frontend' data-aos="fade-right" data-aos-duration="1000">
           <h2>Front-End</h2>
           <div className='icons'>
             <i class="icon devicon-html5-plain"></i>
@@ -15,7 +15,7 @@ const Skills = () => {
             <i class="icon devicon-react-original"></i>
           </div>
         </div>
-        <div className='skills__icons-backend'>
+        <div className='skills__icons-backend' data-aos="fade-left" data-aos-duration="1500">
           <h2>Backend</h2>
           <div className='icons'>
             <i class="icon devicon-nodejs-plain"></i>
@@ -23,7 +23,7 @@ const Skills = () => {
             <i class="icon devicon-express-original"></i>
           </div>
         </div>
-        <div className='skills__icons-tools'>
+        <div className='skills__icons-tools' data-aos="fade-right" data-aos-duration="2000">
           <h2>Herramientas</h2>
           <div className='icons'>
             <i class="icon devicon-git-plain"></i>

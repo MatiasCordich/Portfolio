@@ -1,9 +1,11 @@
 import './homepage.css'
 import image from '../images/matias.png'
+import pdf from '../files/CV.pdf'
 
 const HomePage = () => {
   return (
-    <section className='home'>
+    <section className='home' data-aos="fade-up"
+    data-aos-duration="1500">
         <div className='home__image'>
           <div className='circle'>
             <img className='circle__image' src={image} alt="matias" />
@@ -33,7 +35,7 @@ const HomePage = () => {
               <a href="mailto:m.cordich20@gmail.com">
                  <i className="far fa-envelope"></i> Contacto
               </a>
-              <a href="https://www.linkedin.com/in/matiassiocordich/" target="_blank" rel='noreferrer'>
+              <a href={pdf} target="_blank" rel='noreferrer'>
                 <i className="far fa-file"></i> Mi CV
               </a>
             </div>
