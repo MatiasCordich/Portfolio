@@ -1,108 +1,149 @@
 import './proyects.css'
+import calculadora from '../images/calculadora.png'
 
 const Proyects = () => {
-  return <div>
-      <h1 className='proyects-title'><span>3.</span> Proyectos</h1>
-      <div className='cards' data-aos="fade-down" data-aos-duration="1500">
+  return <section className='proyects' data-aos="fade-down" data-aos-duration="1500">
+      <h1 className='proyects-title'>
+        <span>3.</span> Proyectos</h1>
+      <div className='cards'>
+
         <div className='card'>
           <div className='face face1'>
             <div className='content'>
-              <div className='content__image'></div>
-              <h3>Proyect 1</h3>
             </div>
           </div>
           <div className='face face2'>
             <div className='content'>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae maiores labore numquam autem repellat ipsum distinctio alias   recusandae exercitationem reiciendis, a error at beatae soluta quos aut ratione quis.</p>
-              <a href="#">A</a>
-              <a href="#">A</a>
+              <h2 className='description-title'>Calculadora</h2>
+              <p className='description-text'>Calculadora funcional hecha con Javascript vanilla</p>
+              <p className='description-tech'>HTML | CSS | JS</p>
+              <div className='btn__proyects'>
+                <a href="#">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='card'>
+          <div className='face face1'>
+            <div className='content'>
+            </div>
+          </div>
+          <div className='face face2'>
+            <div className='content'>
+              <h2 className='description-title'>¿Queseria de mi?</h2>
+              <p className='description-text'>Landing Page sobre una ecommerce de quesos</p>
+              <p className='description-tech'>HTML | CSS </p>
+              <div className='btn__proyects'>
+                <a href="#">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='card'>
+          <div className='face face1'>
+            <div className='content'>
+            </div>
+          </div>
+          <div className='face face2'>
+            <div className='content'>
+              <h2 className='description-title'>Pokemon Random</h2>
+              <p className='description-text'>App que arroja un pokemon random con sus stats.</p>
+              <p className='description-tech'>HTML | CSS | JS | PokeApi | React</p>
+              <div className='btn__proyects'>
+                <a href="#">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='card'>
+          <div className='face face1'>
+            <div className='content'>
+            </div>
+          </div>
+          <div className='face face2'>
+            <div className='content'>
+              <h2 className='description-title'>App del Clima</h2>
+              <p className='description-text'>Información meteorológica de tu ubicación actual</p>
+              <p className='description-tech'>HTML | CSS | JS | WeatherAPI</p>
+              <div className='btn__proyects'>
+                <a href="#">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='card'>
+          <div className='face face1'>
+            <div className='content'>
+            </div>
+          </div>
+          <div className='face face2'>
+            <div className='content'>
+              <h2 className='description-title'>Calculadora</h2>
+              <p className='description-text'>Calculadora funcional hecha con Javascript vanilla</p>
+              <p className='description-tech'>HTML | CSS | JS</p>
+              <div className='btn__proyects'>
+                <a href="#">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='card'>
+          <div className='face face1'>
+            <div className='content'>
+            </div>
+          </div>
+          <div className='face face2'>
+            <div className='content'>
+              <h2 className='description-title'>Calculadora</h2>
+              <p className='description-text'>Calculadora funcional hecha con Javascript vanilla</p>
+              <p className='description-tech'>HTML | CSS | JS</p>
+              <div className='btn__proyects'>
+                <a href="#">
+                  <i class="fas fa-link"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
   
-        <div className='card'>
-          <div className='face face1'>
-            <div className='content'>
-              <div className='content__image'></div>
-              <h3>Proyect 1</h3>
-            </div>
-          </div>
-          <div className='face face2'>
-            <div className='content'>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae maiores labore numquam autem repellat ipsum distinctio alias   recusandae exercitationem reiciendis, a error at beatae soluta quos aut ratione quis.</p>
-              <a href="#">A</a>
-              <a href="#">A</a>
-            </div>
-          </div>
-        </div>
-  
-        <div className='card'>
-          <div className='face face1'>
-            <div className='content'>
-              <div className='content__image'></div>
-              <h3>Proyect 1</h3>
-            </div>
-          </div>
-          <div className='face face2'>
-            <div className='content'>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae maiores labore numquam autem repellat ipsum distinctio alias   recusandae exercitationem reiciendis, a error at beatae soluta quos aut ratione quis.</p>
-              <a href="#">A</a>
-              <a href="#">A</a>
-            </div>
-          </div>
-        </div>
-  
-        <div className='card'>
-          <div className='face face1'>
-            <div className='content'>
-              <div className='content__image'></div>
-              <h3>Proyect 1</h3>
-            </div>
-          </div>
-          <div className='face face2'>
-            <div className='content'>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae maiores labore numquam autem repellat ipsum distinctio alias   recusandae exercitationem reiciendis, a error at beatae soluta quos aut ratione quis.</p>
-              <a href="#">A</a>
-              <a href="#">A</a>
-            </div>
-          </div>
-        </div>
-  
-        <div className='card'>
-          <div className='face face1'>
-            <div className='content'>
-              <div className='content__image'></div>
-              <h3>Proyect 1</h3>
-            </div>
-          </div>
-          <div className='face face2'>
-            <div className='content'>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae maiores labore numquam autem repellat ipsum distinctio alias   recusandae exercitationem reiciendis, a error at beatae soluta quos aut ratione quis.</p>
-              <a href="#">A</a>
-              <a href="#">A</a>
-            </div>
-          </div>
-        </div>
-  
-        <div className='card'>
-          <div className='face face1'>
-            <div className='content'>
-              <div className='content__image'></div>
-              <h3>Proyect 1</h3>
-            </div>
-          </div>
-          <div className='face face2'>
-            <div className='content'>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae maiores labore numquam autem repellat ipsum distinctio alias   recusandae exercitationem reiciendis, a error at beatae soluta quos aut ratione quis.</p>
-              <a href="#">A</a>
-              <a href="#">A</a>
-            </div>
-          </div>
-        </div>
+        
       </div>
 
 
-  </div>;
+  </section>;
 };
 
 export default Proyects;

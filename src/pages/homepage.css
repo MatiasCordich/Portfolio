@@ -45,6 +45,7 @@
 }
 
 .home__text p {
+    font-weight: 500;
     width: 95%;
 }
 
