@@ -5,10 +5,10 @@ import './navbar.css'
 
 const Navbar = () => {
 
-    const [close, setClose] = useState(false)
+    const [close, setClose] = useState(true)
  
     const closeNavMenu = () => {
-        if (!close) { setClose(true)}
+        if (!close) {setClose(true)}
     }
 
     const openNavMenu = () => {

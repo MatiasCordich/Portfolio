@@ -2,7 +2,7 @@ import './proyects.css'
 import calculadora from '../images/calculadora.png'
 
 const Proyects = () => {
-  return <section className='proyects' data-aos="fade-down" data-aos-duration="1500">
+  return <section className='proyects' data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
       <h1 className='proyects-title'>
         <span>3.</span> Proyectos</h1>
       <div className='cards'>

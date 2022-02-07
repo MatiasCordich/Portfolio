@@ -5,7 +5,7 @@ import pdf from '../files/CV.pdf'
 const HomePage = () => {
   return (
     <section className='home' data-aos="fade-up"
-    data-aos-duration="1500">
+    data-aos-duration="1500" data-aos-delay="500">
         <div className='home__image'>
           <div className='circle'>
             <img className='circle__image' src={image} alt="matias" />

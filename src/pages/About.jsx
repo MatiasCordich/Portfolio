@@ -2,7 +2,7 @@ import React from 'react';
 import './about.css'
 
 const About = () => {
-  return <section className='about' data-aos="fade-right" data-aos-duration="2000">
+  return <section className='about' data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
       <h1 className='about__title'> <span>1.</span> Sobre Mí</h1>
 
       <p className='about__text'>

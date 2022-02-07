@@ -5,7 +5,7 @@ const Skills = () => {
       <h1 className='skills__title'><span>2.</span> Skills</h1>
 
       <div className='skills__icons'>
-        <div className='skills__icons-frontend' data-aos="fade-right" data-aos-duration="1000">
+        <div className='skills__icons-frontend' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
           <h2>Front-End</h2>
           <div className='icons'>
             <i class="icon devicon-html5-plain"></i>
