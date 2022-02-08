@@ -4,7 +4,6 @@
     max-width: 30rem;
     width: 100%;
     margin: 0 auto;
-    margin-top: 5rem;
     position: relative;
     cursor: pointer;
 }
@@ -24,7 +23,7 @@
 .face {
     max-width:30rem;
     width: 100%;
-    height: 20rem;
+    height: 30rem;
     transition: 0.5s;
 }
 
@@ -35,29 +34,39 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(10rem);
+    transform: translateY(20rem);
 }
 
 .card:hover .face.face1{
-    background: salmon;
     transform: translateY(0);
 }
 
-.card .face.face1 .content {
-    background-image: url(../images/calculadora.png);
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.card .face.face1 .content,
+.card .face.face1 .content-1{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30rem;
+    height: 30rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
     opacity: 0.2;
     transition: 0.5s;
+    
 }
 
-.card:hover .face.face1 .content {
+.card .face.face1 .content{
+    background-image: url(../images/calculadora.png);
+}
+
+.card .face.face1 .content-1 {
+    background-image: url(../images/queseria.png);
+    
+}
+
+.card:hover .face.face1 .content,
+.card:hover .face.face1 .content-1 {
     opacity: 1;
 }
 
@@ -111,7 +120,7 @@
 
 @media (min-width: 990px) {
     .cards{
-        width: 70%;
+        width: 50%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;

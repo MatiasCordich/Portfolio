@@ -16,11 +16,10 @@ const Navbar = () => {
     }
 
     useEffect(()=> {
+
         const mostrarMenu = () => {
             if (window.innerWidth >= 990) {
-                setClose(false)    
-            } else {
-                setClose(true)
+                setClose(false)
             }
         }
 

@@ -31,7 +31,7 @@ const Proyects = () => {
 
         <div className='card'>
           <div className='face face1'>
-            <div className='content'>
+            <div className='content-1'>
             </div>
           </div>
           <div className='face face2'>
@@ -94,52 +94,7 @@ const Proyects = () => {
             </div>
           </div>
         </div>
-
-        <div className='card'>
-          <div className='face face1'>
-            <div className='content'>
-            </div>
-          </div>
-          <div className='face face2'>
-            <div className='content'>
-              <h2 className='description-title'>Calculadora</h2>
-              <p className='description-text'>Calculadora funcional hecha con Javascript vanilla</p>
-              <p className='description-tech'>HTML | CSS | JS</p>
-              <div className='btn__proyects'>
-                <a href="#">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className='card'>
-          <div className='face face1'>
-            <div className='content'>
-            </div>
-          </div>
-          <div className='face face2'>
-            <div className='content'>
-              <h2 className='description-title'>Calculadora</h2>
-              <p className='description-text'>Calculadora funcional hecha con Javascript vanilla</p>
-              <p className='description-tech'>HTML | CSS | JS</p>
-              <div className='btn__proyects'>
-                <a href="#">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        
+               
       </div>
 
 
