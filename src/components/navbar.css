@@ -6,53 +6,72 @@
 
 .navbar{
     width: 90%;
-    margin: 2rem
+    margin: 2rem;
+    height: 5rem;
 }
 
 /* ======== NAVBAR - icons ========  */
 
-.lni-menu,
-.lni-close{
-    font-weight: 800;
+.btn-menu,
+.btn-menu-close{
+    border: none;
+}
+
+.btn-menu{
+    background-color: var(--red);
+    border-radius: 100%;
+    float: right;  
+}
+
+.btn-menu-close{
+    background: none;
+    width: 80%;
+    position: relative;
+    bottom: 12rem;
     display: flex;
     justify-content: flex-end;
 }
 
 .lni-menu{
-    color: var(--red);
     font-size: 2.5rem;
 }
 
 .lni-close{
-    margin: 1.5rem;
-    color: var(--white);
+    font-size: 2rem;
 }
 
-.lni-close-off{
-    display: none;
+.lni-menu,
+.lni-close{
+    color: var(--white);
+    font-weight: 700;
+    padding: 1rem;
 }
 
 /* ======== NAVBAR - display ========  */
 
-.display-navbar{
+.menuNav {
+    overflow-y: scroll;
     position: fixed;
-    z-index: 2;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: var(--red);
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    z-index: 9;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap: 4rem;
     transition: all .6s;
 }
 
-.display-navbar-off{
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: all .6s;
-    width: 0;
-    height: 0;
+.menuNav.showMenu {
+    width: 100%;
 }
+
 
 /* ======== NAVBAR - links ========  */
 
@@ -64,10 +83,6 @@
     align-items: center;
     flex-direction: column;
     gap:4rem;
-}
-
-.navbar-links-off{
-    display: none;
 }
 
 .active {
@@ -86,24 +101,21 @@
         margin: 1rem;
     }
 
-    .lni-menu,
-    .lni-close,
-    .navbar {
+    .menuNav{
+        background-color: #d72323ec;
+    }
+
+    .menuNav.showMenu{
+        width: 50%;
+    }
+
+    .inactive,
+    .active{
+        font-size: 2.5rem;
+        letter-spacing: .2rem;
+    }
+
+    .btn-menu-close{
         display: none;
-    }
-
-    .display-navbar {
-        display: flex;
-        position:static;
-        width: 90%;
-        height: 8rem;
-        background: var(--red);
-        border-radius: 2rem 0 2rem 0;
-        margin: 0 auto;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-
-    .display-navbar ul {
-        flex-direction: row;
     }
 }

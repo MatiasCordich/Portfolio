@@ -12,7 +12,7 @@
 }
 
 .home__image{
-    height: 30rem;
+    height: auto;
 }
 .home__text{
     line-height: 4.5rem;
@@ -120,6 +120,7 @@
     }
 
     .home__text h1 {
+        margin: 2rem;
         font-size: 7rem;
     }
 
@@ -130,4 +131,10 @@
     }
 
 
+}
+
+@media (min-width: 1024px) {
+    .home__text h1{
+        font-size: 9rem;
+    }
 }

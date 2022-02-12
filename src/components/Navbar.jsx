@@ -1,59 +1,53 @@
 import {NavLink} from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './navbar.css'
 
 
 const Navbar = () => {
 
-    const [close, setClose] = useState(true)
+    const [navbarOpen, setNavbarOpen] = useState(false)
  
-    const closeNavMenu = () => {
-        if (!close) {setClose(true)}
+    const handleToggle = () => {
+        setNavbarOpen(!navbarOpen)
     }
 
-    const openNavMenu = () => {
-        if (close) {setClose(false)}  
+    const closeMenu = () => {
+        setNavbarOpen(false)
     }
-
-    useEffect(()=> {
-
-        const mostrarMenu = () => {
-            if (window.innerWidth >= 990) {
-                setClose(false)
-            }
-        }
-
-        window.addEventListener('resize', mostrarMenu)
-    },[])
-
-    
 
   return (
 
     <header>
         <nav className='navbar'>
-            <i onClick={openNavMenu} className="lni lni-menu"></i>
-        </nav>
-        <div className={!close ? 'display-navbar' : 'display-navbar-off'}>
-                <i onClick={closeNavMenu} className={!close ? "lni lni-close" : 'lni-close-off'}></i>
-                <ul className={!close ? 'navbar-links' : 'navbar-links-off'}>
+            <button onClick={handleToggle} className='btn-menu'>
+                <i className="lni lni-menu"></i>
+            </button>
+
+            <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+                    <button onClick={closeMenu} className='btn-menu-close'>
+                        <i className="lni lni-close"></i>
+                    </button>
                     <li>
-                        <NavLink className={({isActive}) => (isActive ? 'active' : "inactive")} to='/'>Home</NavLink>
+                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/'>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => (isActive ? 'active' : "inactive")} to='/about'>About</NavLink>
+                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/about'>About</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => (isActive ? 'active' : "inactive")} to='/skills'>Skills</NavLink>
+                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/skills'>Skills</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => (isActive ? 'active' : "inactive")} to='/proyects'>Proyects</NavLink>
+                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/proyects'>Proyects</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => (isActive ? 'active' : "inactive")} to='/contact'>Contact</NavLink>
+                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/contact'>Contact</NavLink>
                     </li>
             </ul>
-            </div>
+            
+        </nav>
+                    
+
+        
     </header>
   
     );
