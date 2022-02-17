@@ -20,7 +20,8 @@
 .btn-menu{
     background-color: var(--red);
     border-radius: 100%;
-    float: right;  
+    float: right;
+    cursor: pointer;  
 }
 
 .btn-menu-close{

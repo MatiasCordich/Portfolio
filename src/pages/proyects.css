@@ -42,7 +42,9 @@
 }
 
 .card .face.face1 .content,
-.card .face.face1 .content-1{
+.card .face.face1 .content-1,
+.card .face.face1 .content-2,
+.card .face.face1 .content-3{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,17 +58,30 @@
     
 }
 
+.card .face.face1 .content-3{
+    background-size: contain;
+}
+
 .card .face.face1 .content{
     background-image: url(../images/calculadora.png);
 }
 
 .card .face.face1 .content-1 {
-    background-image: url(../images/queseria.png);
-    
+    background-image: url(../images/queseria.png); 
+}
+
+.card .face.face1 .content-2 {
+    background-image: url(../images/pokeApi.png); 
+}
+
+.card .face.face1 .content-3 {
+    background-image: url(../images/wheaterapp.png); 
 }
 
 .card:hover .face.face1 .content,
-.card:hover .face.face1 .content-1 {
+.card:hover .face.face1 .content-1,
+.card:hover .face.face1 .content-2,
+.card:hover .face.face1 .content-3 {
     opacity: 1;
 }
 
