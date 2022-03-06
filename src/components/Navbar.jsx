@@ -31,16 +31,16 @@ const Navbar = () => {
                         <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/'>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/about'>About</NavLink>
+                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/about'>Sobre Mi</NavLink>
                     </li>
                     <li>
                         <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/skills'>Skills</NavLink>
                     </li>
                     <li>
-                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/proyects'>Proyects</NavLink>
+                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/proyects'>Proyectos</NavLink>
                     </li>
                     <li>
-                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/contact'>Contact</NavLink>
+                        <NavLink onClick={closeMenu} className={({isActive}) => (isActive ? 'active' : "inactive")} to='/contact'>Contacto</NavLink>
                     </li>
             </ul>
             

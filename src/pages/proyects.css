@@ -44,7 +44,9 @@
 .card .face.face1 .content,
 .card .face.face1 .content-1,
 .card .face.face1 .content-2,
-.card .face.face1 .content-3{
+.card .face.face1 .content-3,
+.card .face.face1 .content-4,
+.card .face.face1 .content-5 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,10 +80,20 @@
     background-image: url(../images/wheaterapp.png); 
 }
 
+.card .face.face1 .content-4 {
+    background-image: url(../images/chatimage.png); 
+}
+
+.card .face.face1 .content-5 {
+    background-image: url(../images/newsapp.png); 
+}
+
 .card:hover .face.face1 .content,
 .card:hover .face.face1 .content-1,
 .card:hover .face.face1 .content-2,
-.card:hover .face.face1 .content-3 {
+.card:hover .face.face1 .content-3,
+.card:hover .face.face1 .content-4,
+.card:hover .face.face1 .content-5 {
     opacity: 1;
 }
 
@@ -135,7 +147,7 @@
 
 @media (min-width: 990px) {
     .cards{
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
