@@ -105,7 +105,7 @@ const Proyects = () => {
               <p className='description-text'>Aplicación que emula un chat con registro de autenticación.</p>
               <p className='description-tech'>React | Firebase | Styled-components</p>
               <div className='btn__proyects'>
-                <a href="https://chat-app-a5334.web.app/" target='__blank'>
+                <a href="https://chat-app-umber-eight.vercel.app/" target='__blank'>
                   <i class="fas fa-link"></i>
                 </a>
                 <a href="https://github.com/MatiasCordich/chat-app" target='__blank'>
