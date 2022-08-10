@@ -1,5 +1,6 @@
 @import '../variables/variables.css';
 
+
 .card {
     max-width: 30rem;
     width: 100%;
@@ -9,6 +10,10 @@
 }
 
 .proyects-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
     font-size: 4.5rem;
     font-weight: 800;
     color: var(--brown);
@@ -81,7 +86,7 @@
 }
 
 .card .face.face1 .content-4 {
-    background-image: url(../images/chatimage.png); 
+    background-image: url(../images/blocnotas.png);
 }
 
 .card .face.face1 .content-5 {
@@ -147,11 +152,10 @@
 
 @media (min-width: 990px) {
     .cards{
-        width: 70%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        gap: 4rem;
     }
 }

@@ -81,12 +81,12 @@ const Proyects = () => {
             <div className='content'>
               <h2 className='description-title'>App del Clima</h2>
               <p className='description-text'>Información meteorológica de tu ubicación actual</p>
-              <p className='description-tech'>HTML | CSS | JS | WeatherAPI</p>
+              <p className='description-tech'>React | Styled-Components | WeatherAPI</p>
               <div className='btn__proyects'>
-                <a href="https://weather-app-alpha-seven.vercel.app/" target='__blank'>
+                <a href="https://react-weather-app-two-pi.vercel.app/" target='__blank'>
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://github.com/MatiasCordich/Weather-App" target='__blank'>
+                <a href="https://github.com/MatiasCordich/react-weather-app" target='__blank'>
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -101,14 +101,14 @@ const Proyects = () => {
           </div>
           <div className='face face2'>
             <div className='content'>
-              <h2 className='description-title'>Chat App</h2>
-              <p className='description-text'>Aplicación que emula un chat con registro de autenticación.</p>
-              <p className='description-tech'>React | Firebase | Styled-components</p>
+              <h2 className='description-title'>Bloc de Notas</h2>
+              <p className='description-text'>SPA de Block de Notas con Registro y logueo de usuarios</p>
+              <p className='description-tech'>React | MongoDB | Heroku</p>
               <div className='btn__proyects'>
-                <a href="https://chat-app-umber-eight.vercel.app/" target='__blank'>
+                <a href="https://integrador-nucba-client.herokuapp.com/" target='__blank'>
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://github.com/MatiasCordich/chat-app" target='__blank'>
+                <a href="https://github.com/MatiasCordich/Integrador-Final" target='__blank'>
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -137,7 +137,7 @@ const Proyects = () => {
             </div>
           </div>
         </div>
-               
+
       </div>
 
 

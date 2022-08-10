@@ -15,6 +15,11 @@
     height: auto;
 }
 .home__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
     line-height: 4.5rem;
 }
 
@@ -28,8 +33,17 @@
 }
 .home__text h1,
 .home__text h2,
+.home__text h3,
 .home__text p {
     text-align: center;
+}
+
+.home__text h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
 }
 
 .home__text h3{
@@ -135,6 +149,10 @@
 
 @media (min-width: 1024px) {
     .home__text h1{
-        font-size: 9rem;
+        font-size: 4rem;
+    }
+
+    .home__text h2 {
+        font-size: 5rem;
     }
 }
